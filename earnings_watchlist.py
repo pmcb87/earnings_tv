@@ -1,9 +1,3 @@
-"""tradingview watchlist creator
-
-1. All stocks with earnings this week and the following week.
-2. Export in a format suitable for TradingView import.
-"""
-
 import requests
 import json
 import os
