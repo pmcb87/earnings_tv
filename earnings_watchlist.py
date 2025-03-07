@@ -43,11 +43,9 @@ def get_weeks():
     start_of_week = today - timedelta(days=today.weekday())
     end_of_week = start_of_week + timedelta(days=4)
 
-    # Next week
     start_of_next_week = start_of_week + timedelta(days=7)
     end_of_next_week = start_of_next_week + timedelta(days=4)
 
-    # Create tuples for both weeks
     weeks = [
         (start_of_week.strftime("%Y-%m-%d"), end_of_week.strftime("%Y-%m-%d")),
         (start_of_next_week.strftime("%Y-%m-%d"), end_of_next_week.strftime("%Y-%m-%d"))
